@@ -1,0 +1,25 @@
+                  HTLM (suite)
+* Liste non ordonnée
+ <ul></ul> délimite toute la liste
+ <li></li> délimite un élément de la liste (une puce)
+ ex: <ul>
+         <li<Fraises</li>
+         <li>Framboises</li>
+         <li>Cerises</li>
+      <ul>
+*ce qui donne sur la page:
+       - Fraises
+       - Framboises
+       - Cerises
+*Liste ordonnée
+   <ol></ol> <li></li>
+ ex: <ol>
+         <li>Fraises</li>
+         <li>Framboises</li> 
+         <li>Cerises</li>
+*ce qui donne sur la page:
+       1. Fraises
+       2. Framboises
+       3. Cerises
+  
+
