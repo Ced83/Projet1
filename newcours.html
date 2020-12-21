@@ -1,90 +1,116 @@
-<! DOCTYPE html>
-<html>
-    <head>
-        <title>Cours html</title>
-        <meta charset="utf-8" />
-    </head>
-    <body>
-            <h1>Liste non ordonnée</h1>
-            <p>
-            "<ul></ul>" délimite toute la liste.
-            "<li></li>" délimite un élément de la liste (une puce)
+&LT;! DOCTYPE html&GT;
+&LT;html&GT;
+    &LT;head&GT;
+        &LT;title&GT;Cours html&LT;/title&GT;
+        &LT;meta charset="utf-8" /&GT;
+    &LT;/head&GT;
+    &LT;body&GT;
+            &LT;h1&GT;Liste non ordonnée&LT;/h1&GT;
+            &LT;p&GT;
+            &LT;ul&LT;/ul&GT;" délimite toute la liste.
+            "&LT;li&GT;&LT;/li&GT;" délimite un élément de la liste (une puce)
             <br />
-            ex: "<ul>"
-                    "<li>Fraises</li>"
-                    "<li>Framboises</li>"
-                    "<li>Cerises</li>"
-                "</ul>
+            <br /> 
+            ex: "&LT;ul&GT;"
+                    "&LT;li&GT;Fraises&LT;/li&GT;"
+                    "&LT;li&GT;Framboises&LT;/li&GT;"
+                    "&LT;li&GT;Cerises&LT;/li&GT;"
+                "&LT;/ul&GT;
             *Ce qui donne sur la page: -Fraises
                                        -Framboises  
                                        -Cerises
-            <h1>Liste ordonnée</h1>
+            &LT;h1&GT;Liste ordonnée&LT;/h1&GT;
             <br />
-            "<ol></ol>"
-            "<li></li>"
-            ex: "<ol>"
-                    "<li>Fraises</li>"
-                    "<li>Framboises</li>"
-                    "<li>Cerises</li>"
-                "</ol>"
+            <br />
+            "&LT;ol&GT;&LT;/ol&GT;"
+            "&LT;li&GT;&LT;/li&GT;"
+            ex: "&LT;ol&GT;"
+                    "&LT;li&GT;Fraises&LT;/li&GT;"
+                    "&LT;li&GT;Framboises&LT;/li&GT;"
+                    "&LT;li&GT;Cerises&LT;/li&GT;"
+                "&LT;/ol&GT;"
             *Ce qui donne sure la page: 1. Fraises
                                         2. Framboises                       
                                         3. Cerises
             <br />
-            <h1>Lien vers un autre site ex: Openclassrooms</h1>
             <br />
-            <strong>"<a href="https://openclassrooms.com">Openclassrooms</a>"
+            &LT;h1&GT;Lien vers un autre site ex: Openclassrooms&LT;/h1&GT;
             <br />
-            <h1>Pour placer ce lien au sein d'un paragraphe</h1>
+            <br /> 
+            &LT;strong&GT;"&LT;a href="https://openclassrooms.com"&GT;Openclassrooms&LT;/a&GT;"
             <br />
-            <strong>"<p>Bonjour. Vous souhaitez visiter <a href="https://openclassrooms.com">Openclassrooms</a>?C'est un bon site</p>"</strong>
+            &LT;h1&GT;Pour placer ce lien au sein d'un paragraphe&LT;/h1&GT;
             <br />
-            <h1>Comment faire un lien de la page 1 vers la page 2 sans avoir d'adresse en http://</h1>
+            <br /> 
+            &LT;strong&GT;"&LT;p&GT;Bonjour. Vous souhaitez visiter &LT;a href="https://openclassrooms.com"&GT;Openclassrooms&LT;/a&GT;?C'est un bon site&LT;/p&GT;"&LT;/strong&GT;
             <br />
-            <strong>"<p>Bonjour. Souhaitez-vous consulter <a href="page2.html">la page 2</a> ?</p>"</strong>
             <br />
-            <h1>Deux pages situées dans des dossiers différents</h1>
+            &LT;h1&GT;Comment faire un lien de la page 1 vers la page 2 sans avoir d'adresse en http://&LT;/h1&GT;
             <br />
-            <strong>"<a href="contenu:page2.html">"</strong>
             <br />
-            <h1>Un lien vers une ancre (un mot clé)</h1>
+            &LT;strong&GT;"&LT;p&GT;Bonjour. Souhaitez-vous consulter &LT;a href="page2.html"&GT;la page 2&LT;/a&GT; ?&LT;/p&GT;"&LT;/strong&GT;
             <br />
-            <strong>"<h1 id="mon ancre">Titre<h1>(titre)"</strong>
-            <strong>"<a href="#mon ancre">Aller vers l'ancre</a>(lien)"</strong>
             <br />
-            <h1>Lien vers une ancre située dans une autre page</h1>
+            &LT;h1&GT;Deux pages situées dans des dossiers différents&LT;/h1&GT;
             <br />
-            <strong>"ex:<h1>Le mégamix"</h1>
             <br />
-            <p>
-            <strong>"<a href="ancres.html#cuisine">La cuisine</a>"<br />"</strong>
-            <strong>"<a href="ancres.html#rollers">Les rollers</a><br />"</strong>
-            <strong>"<a href="ancres.html#arc">Le tir à l'arc</a><br />"</strong>
-            </p>
+            &LT;strong&GT;"&LT;a href="contenu:page2.html"&GT;"&LT;/strong&GT;
             <br />
-            <h1>Un lien qui affiche une infobulle au survol</h1>
             <br />
-            <strong>"<p>Bonjour. Souhaitez-vous visiter "<a href="https://openclassrooms.com" title="Vous ne regretterez pas !">Openclassrooms</a> ?</p>"</strong>
+            &LT;h1&GT;Un lien vers une ancre (un mot clé)&LT;/h1&GT;
             <br />
-            <h1<Un lien qui ouvre une nouvelle fenêtre</h1>
             <br />
-            <strong>"<p>Bonjour. Souhaitez-vous visiter "<a href="https://openclassrooms.com" title="Vous ne regretterez pas !" target="blank">Openclassrooms</a> ?</p>"</strong>
+            &LT;strong&GT;"&LT;h1 id="mon ancre"&GT;Titre&LT;h1&GT;(titre)"&LT;/strong&GT;
+            &LT;strong&GT;"&LT;a href="#mon ancre"&GT;Aller vers l'ancre&LT;/a&GT;(lien)"&LT;/strong&GT;
             <br />
-            <h1>Un lien pour envoyer un e-mail</h1>
             <br />
-            <strong>"<p><a href="mailto:cedriclinder83@gmail.com">Envoyez-moi un e-mail !</a></p>"</strong>
+            &LT;h1&GT;Lien vers une ancre située dans une autre page&LT;/h1&GT;
             <br />
-            <h1>Un lien pour télécharger un fichier</h1>
             <br />
-            <strong>"<p><a href="nomdufichier.zip,docx,etc..">Télécharger le fichier</a></p>"</strong>
+            &LT;strong&GT;"ex:&LT;h1&GT;Le mégamix"&LT;/h1&GT;
             <br />
-            <h1>Pour insérer une image</h1>
             <br />
-            <strong>"<img src="Images(nom du dossier ou se trouve la photo)/montagne.jpg" alt="Photo de montagne" />"</strong>
+            &LT;p&GT;
+            &LT;strong&GT;"&LT;a href="ancres.html#cuisine"&GT;La cuisine&LT;/a&GT;"&LT;br /&GT;"&LT;/strong&GT;
+            &LT;strong&GT;"&LT;a href="ancres.html#rollers"&GT;Les rollers&LT;/a&GT;&LT;br /&GT;"&LT;/strong&GT;
+            &LT;strong&GT;"&LT;a href="ancres.html#arc"&GT;Le tir à l'arc&LT;/a&GT;&LT;br /&GT;"&LT;/strong&GT;
+            &LT;/p&GT;
             <br />
-            <h1>Pour ajouter une infobulle</h1>
             <br />
-            <strong>"<p><img src="Images/montagne.jpg" alt Photo de montagne" />"</strong>
+            &LT;h1&GT;Un lien qui affiche une infobulle au survol&LT;/h1&GT;
+            <br />
+            <br />
+            &LT;strong&GT;"&LT;p&GT;Bonjour. Souhaitez-vous visiter "&LT;a href="https://openclassrooms.com" title="Vous ne regretterez pas !"&GT;Openclassrooms&LT;/a&GT; ?&LT;/p&GT;"&LT;/strong&GT;
+            <br />
+            <br />
+            &LT;h1&LT;Un lien qui ouvre une nouvelle fenêtre&LT;/h1&GT;
+            <br />
+            <br />
+            &LT;strong&GT;"&LT;p&GT;Bonjour. Souhaitez-vous visiter "&LT;a href="https://openclassrooms.com" title="Vous ne regretterez pas !" target="blank"&GT;Openclassrooms&LT;/a&GT; ?&LT;/p&GT;"&LT;/strong&GT;
+            <br />
+            <br />
+            &LT;h1&GT;Un lien pour envoyer un e-mail&LT;/h1&GT;
+            <br />
+            <br />
+            &LT;strong&GT;"&LT;p&GT;&LT;a href="mailto:cedriclinder83@gmail.com"&GT;Envoyez-moi un e-mail !&LT;/a&GT;&LT;/p&GT;"&LT;/strong&GT;
+            <br />
+            <br />
+            &LT;h1&GT;Un lien pour télécharger un fichier&LT;/h1&GT;
+            <br />
+            <br />
+            &LT;strong&GT;"&LT;p&GT;&LT;a href="nomdufichier.zip,docx,etc.."&GT;Télécharger le fichier&LT;/a&GT;&LT;/p&GT;"&LT;/strong&GT;
+            <br />
+            <br />
+            &LT;h1&GT;Pour insérer une image&LT;/h1&GT;
+            <br />
+            <br />
+            &LT;strong&GT;"&LT;img src="Images(nom du dossier ou se trouve la photo)/montagne.jpg" alt="Photo de montagne" /&GT;"&LT;/strong&GT;
+            <br />
+            <br />
+            &LT;h1&GT;Pour ajouter une infobulle&LT;/h1&GT;
+            <br />
+            <br />
+            &LT;strong&GT;"&LT;p&GT;&LT;img src="Images/montagne.jpg" alt Photo de montagne" /&GT;"&LT;/strong&GT;
             <br />
             
 
@@ -96,7 +122,7 @@
 
 
 
-            <h1>
+            &LT;h1&GT;
 
 
 
@@ -104,6 +130,6 @@
                      
 
 
-    </p>
-    </body>
-    </html>
+    &LT;/p&GT;
+    &LT;/body&GT;
+    &LT;/html&GT;
