@@ -1,7 +1,3 @@
-p
-{
-    color: blue;
-}
 h1
 {
     font-size: moyen;
@@ -13,4 +9,12 @@ balise
 p
 {
     font-family: "arial black";
+}
+em
+{
+    color: blue;
+}
+h1
+{
+    color: blue;
 }

@@ -112,8 +112,138 @@
             <br />
             &LT;strong&GT;"&LT;p&GT;&LT;img src="Images/montagne.jpg" alt Photo de montagne" /&GT;"&LT;/strong&GT;
             <br />
+            &LT;h1&GT;CSS</h1>
+            <br />
+            <h1>Pour insérer le Css dans la page html</h1>
+            <br />
+            <p>"<link rel="stylesheet" href="style.css" />"</p>
+            <br />
+            <h2>Ajouter une propriété et une valeur</h2>
+            <p>ex"h1 color: blue;"</p>
+            <br />
+            <h2>Appliquer un style: class et id</h2>
+            <br />
+            <p>insérer dans un paragraphe "<p class="introduction">dans la page html et .introduction{color: blue; dans la page css, cela mettra la ligne du paragraphe en bleu</p>
+            <br />
+            <p>id à la meme signification que "class sauf qu'il ne peut être utilisé qu'une seule fois dans le code ex:img src="images/logo.png" alt="logo du site" id="logo"</p>
+            <br />
+            <p>ex"#logo'{color: blue;}</p>
+            <br />
+            <h2>les balises universelles</h2>
+            <br />
+            <p>ex:bonjour et <span class="salutations">bienvenue</span>sur mon site ! (page html) ensuite on rentre (dans page css).salutations{color: blue;}cela mettra bienvenue en bleu</p>
+            <br />
+            <h2>Les selecteurs avancés</h2>
+            <br />
+            <p>*{}</p>
+            <p>une balise contenue dans une autre</p>
+            <br />
+            <p>h3 em{} ex:<h3>Titre avec <em>texte important</em></h3></p>
+            <br />
+            <p>une balise qui en suit une autre</p>
+            <br />
+            <p>h3 + p{} ex: <h3>Titre</h3> <p>Paragraphe</p></p>
+            <br />
+            <h2>une balise qui possède un attribut</h2>
+            <br />
+            <p>a[title]{} ex: <a href="http://site.com" title="infobulle"></p>
+            <br />
+            <h2>A[attribut*="Valeur"] ex: a[title*="ici"] et sur la page html ex: <a href="https://site.com" title="quelque part ici"></a></h2>
+            <br />
+            <h2>Pour mettre un texte en italic</h2>
+            <br />
+            <p>ex: p{ font-style: italic;</p>
+            <br />
+            <h2>Pour mettre un texte en gras</h2>
+            <br />
+            <p> ex: p{ font-weight: bold;</p>
+            <br />
+            <h2>Pour souligner mon texte</h2>
+            <br />
+            <p> ex: p{ text-decoration: underline;</p>
+            <br />
+            <h2>Pour barrer la ligne</h2>
+            <br />
+            <p> ex: p{ text-decoration: line-through;</p>
+            <br />
+            <h2>Pour aligner, centrer ou deplacer un texte de gauche ou droite</h2>
+            <br />
+            <p>ex: p{ text-align: left} ou h1{ text-align: center;} centre le titre ou pour centrer tt le texte de la page p{ text-aligh: justify;}</p>
+            <br />
+            <h2>Pour ajouter et déplacer une image sur la page</h2>
+            <br/>
+            <p>ex: <p><img src="images/_E4779.png" alt=Photo de Nina et moi" class="flottant"(sur la page html) et .flottant{ float: left;}(sur la page css) /></p>
+            <br />
+            <h2>Si on veut soit à gauche ou droite d'un seul paragraphe</h2>
+            <br />
+            <p>on tape sur la page htlm au niveau du 2eme paragraphe <p class="autreparagraphe" dans la page html et sur la page css .autreparagraphe{clear: left}</p>
+            <br />
+            <h2>Pour modifier la police utisée</h2>
+            <br />
+            <p>ex: p{ font-family: Impact,"Arial Black", Arial, Verdana, sans-serif;</p>
+            <br />
+            <h2>Pour changer la couleur de fond de la page</h2>
+            <br />
+            <p>ex: body{ background-color: blue;</p>
+            <h2>Pour changer la couleur de fond juste pour le titre</h2>
+            <br />
+            <p> ex: h1{ background-color: blue;}</p>
+            <br />
+            <h2>Pour changer l'image de fond</h2>
+            <br />
+            <p></p> ex: body{ background-image: url("img_E4779.jpg");} l'image de se trouver dans le meme dossier que le  fichier css,si on la place dans un sous-dossier image alors indiquer le chemin ex: body{ background-image: url("images/img_E4779.jpg");}</p>
+            <br />
+            <h2>Pour personnaliser l'image du fond</h2>
+            <br />
+            <p>ex: body{ background-image: IMG_E4779.jpg;} </p>
+                         background-attachment: fixed;(fixe l'image avec le texte)
+                         background-repeat: no-repeat;(le fond ne se repette pas)
+                         background-position: top right;(positionne le fond ou vous voulez sur la page)
+            <br />    
+            <h2>Pour qu'un titre soit trasparent en fond noir ecrit en blanc</h2> 
+            <br />
+            <p> ex: h1{ background-color: black;
+                        color: white;
+                        opacity: 0,6 (degres de transparence)
+                      } 
+            <br />
+            <h2>Créer des bordures</h2>
+            <br />
+            <p></p> ex: pour le titre: h1
+                                       {
+                                           border: 3px blue solid; (solid= trait continu)
+                                           border-radius: 20px; (bordures arrondies)
+                                           box-shadow: 6px(horizontal) 6px(vertical) 6px(adoucissement du dégradé)black( couleur de l'ombre)
+                                           test-shadow: 6px 6px 6px black; (change les lettres du titre)
+
+                                       }
+            <br />
+            <h2>Créer des apparences dynamiques</h2>
+            <br />
+            <p>mes liens changent d'apparences quand la souris pointe dessus ex: a:hover
+                                                                                 {
+                                                                                    color:green;
+                                                                                 }
+            <p>change la bordure du paragraphe quand la souris pointe dessus ex: p:hover
+                                                                                 {
+                                                                                     border-left: 3px solid black;
+                                                                                 }
+            <p>change la couleur du lien quand on pointe la souris dessus ex: a:active
+                                                                              {
+                                                                                  color: red;
+                                                                              } 
+            <p>change la couleur des liens quand on les a deja visités ex:    a:visited 
+                                                                              {
+                                                                                  color: green;
+                                                                              }                                                                                                                                       
+            </p>
+            <br />
+
+
+
             
 
+                         
 
 
 
@@ -122,7 +252,9 @@
 
 
 
-            &LT;h1&GT;
+
+
+
 
 
 
