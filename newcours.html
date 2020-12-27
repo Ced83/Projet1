@@ -238,6 +238,114 @@
                                                                               }                                                                                                                                       
             </p>
             <br />
+            <h1>Les blocs (width=largeur,height=hauteur) et inline( balise à l'intérieur des blocs ex: <a></a></h1>
+            <br />
+            <p>ex: <h1>
+                        {
+                            width: 600px;
+                            background-color: blue;
+                        }
+               ex: <p>
+                    {
+                        width: 250px;
+                        height: 110px;
+                        text-align: justify;
+                        border: 1px solid black;
+                        word-wrap: break-word (force à aller à la ligne même avec un long mot)
+                        min-width: lageur minimal
+                        max-width: largeur maximal
+                        min-height: hauteur minimal
+                        max-height: largeur maximal
+                        permet de center ou mettre le paragraphe a gauche ou droite
+
+                        margin: c'est la marge qui sépare les blocs
+                        padding: c'est la marge à l'interieur des blocs
+                        margin: auto (permet de calculer automatiquement le texte sur la page mais il faut aussi indiquer la largeur du bloc)
+                        overflow: visible (ca veut dire que texte dépace du <bloc)
+                        overflow: hidden (le texte sera coupé)
+                        overflow: scroll (ajoute des barres de défilement pour voir le texte coupé)
+                        overflow: auto 
+                     }
+                     </p>
+                     <br />
+                     <h1>>Flexbox on utise sur la page css display: flex;</h1>
+                     <br />
+                     <p>sur une même page web on peut avoir plusieurs conteneurs avec plusieurs éléments à l'intérieur</p>
+                     <br />
+                     <p>le conteneur est une balise html</p>
+                     <br />
+                     <p> ex: sur html: <div id="conteneur"></div>
+                                    <div class="element 1">Element </div>
+                                    <div class="element 2">Element </div>
+                                    <div class="element 3">Element </div>
+                     </div>
+                     </p>
+                     <br />
+                     <p>ex: sur css: #conteneur
+                                     {
+                                        display: flex;
+                                     } alors les blocs se placent côte à côte
+                     </p>
+                     <h1>La direction ont utilise: flex-direction</h1>
+                     <br />
+                     <p>row: organisés sur une ligne
+                        column: organisés sur une colonne
+                        row-reverse: organisés sur une ligne mais en ordre inversé
+                        column-reverse: organisés sur une colonne mais en ordre inversé
+                        ex: #conteneur
+                            {
+                                display: flex;
+                                flex-direction: column;
+                            }
+                     </p>
+                     <br />
+                     <h1>Retour à la ligne</h1>
+                     <p>flex-wrap si on veut que les blocs aillent à la ligne quand il n'ont plus de place</p>
+                     <p>nowrap: pas de retour à la ligne
+                        wrap: les éléments vont à la ligne lorsqu'il n'y a plus de place
+                        wrap-reverse:les éléments vont à la ligne lorsqu'il n'y a plus de place, en sens inverse
+                        ex: #conteneur
+                            {
+                                display: flex;
+                                flex-wrap;
+                            } 
+                     </p>
+                     <br />
+                     <h1>Pour aligner sur l'axe principal on utise justify-content</h1>
+                     <br />
+                     <p>flex-start: alignés au début
+                        flex-end: alignés à la fin
+                        center: alignés au centre
+                        space-between: les éléments sont étirés sut tt l'axe( pas d'espace entre eux)
+                        space-around: étirés sur tt l'axe sauf qu'ils laissent de l'espace sur les extrémité
+                        ex: #conteneur
+                        {
+                            display: flex;
+                            justify-content: space-around;
+                        }
+                     </p>
+                     <br />
+                     <h1>Pour aligner sur l'axe secondaire align-items</h1>
+                     <br />
+                     <P>stretch: les éléments sont étirés sur tt l'axe
+                        flex-start: alignés au début
+                        flex-end: alignés à la fin
+                        center: alignés au centre
+                        baseline: alignés sur la ligne de base
+                        ex: #conteneur
+                            {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            } 
+                     </P>
+                     <br />
+
+
+
+
+
+
 
 
 
