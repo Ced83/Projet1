@@ -96,3 +96,34 @@ header nav ul li a:hover, header nav ul li a:active {
     color: #760001;
     border-bottom: 2px solid #760001;
 }
+
+#banniere_image {
+    display: flex;
+    align-items: flex-end;
+
+    height: 220px;
+    background-size: cover;
+    background-image: url(../images/sanfrancisco.jpg);
+}
+
+#banniere_description {
+    font-size: 11px;
+    align-items: center;
+
+    width: 100%;
+    display: flex;
+    color: #ccc5c5;
+    padding: 6px 15px;
+    justify-content: space-between;
+    background-color: rgba(1, 1, 1, 0.5);
+}
+
+#banniere_description .bouton_rouge {
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #760001;
+    background: url(../images/fond_degraderouge.png) repeat-x;
+}
