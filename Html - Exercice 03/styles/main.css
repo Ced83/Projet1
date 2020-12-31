@@ -127,3 +127,13 @@ header nav ul li a:hover, header nav ul li a:active {
     border: 1px solid #760001;
     background: url(../images/fond_degraderouge.png) repeat-x;
 }
+
+section article h1 {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+}
+
+section article .ico_categorie{
+    align-items: center;
+}
