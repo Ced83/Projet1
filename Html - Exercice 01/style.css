@@ -1,0 +1,32 @@
+
+h1
+{
+    color: blue;
+}
+@media screen and (max-width:1024px){
+    h1{
+        color:red;
+        background-color: black;
+        font-size: 1,2em;
+    }
+}
+li{
+    color: rgb(49, 0, 128);
+}
+h1
+{
+    text-align: center;
+}
+body
+{
+    background-color: rgba(0, 140, 255, 0.322);
+}
+h1
+{
+    border: 6px  blueviolet solid;
+    box-shadow: 6px 6px 6px black
+}
+body
+{
+    background-image: url(neige.jpg);
+}
