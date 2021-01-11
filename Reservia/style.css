@@ -1,0 +1,88 @@
+@font-face{
+    font-family: 'Raleway';
+    src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.header .titre_principal .a {
+    text-align: justify;
+}
+
+.hebergements__container {
+
+}
+
+.hebergements__container .bloc {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 1px;
+}
+.hebergements__container .p{
+    font-weight: 1px;
+}
+
+.container .nav .ul{
+    display: flex;
+    padding-top: 7em;
+    margin-top: -7em;
+    justify-content: flex-end;
+}
+
+.hebergements__container .bloc .picture {
+    height: 100px;
+    width: 100px;
+}
+
+.hebergements__container .bloc .stars {
+    display: flex;
+    flex-direction: row;
+}
+
+.hebergements__container .bloc .stars .filled_star {
+    color: #0065FC;
+}
+
+.hebergements__container .bloc .stars .empty_star {
+    color: #F2F2F2;
+}
+
+.picture{
+    width: 100%;
+   
+
+}
+
+.title{
+    text-align: justify;
+    vertical-align: middle;
+    font-size: small;
+    font-weight: bold;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: right;
+    text-align: right;
+    
+}
+
+.recherche{
+    
+    list-style-type: none;
+    justify-content: left;
+    flex-direction: row;
+    
+}
+
+header nav ul{
+    display: flex;
+    justify-content: right;
+}
+
+
