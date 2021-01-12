@@ -5,7 +5,12 @@
     font-style: normal;
 
 }
-.header .titre_principal .a {
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.header .titre_principal{
     text-align: justify;
 }
 
@@ -16,14 +21,14 @@
 .hebergements__container .bloc {
     width: 150px;
     display: flex;
-    flex-direction: column;
-
     border: 1px solid black;
     border-radius: 8px;
     padding: 1px;
 }
-.hebergements__container .p{
+.hebergements__container {
+    display: flex;
     font-weight: 1px;
+    
 }
 
 .container .nav .ul{
@@ -34,13 +39,19 @@
 }
 
 .hebergements__container .bloc .picture {
-    height: 100px;
-    width: 100px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 1px
+
 }
 
 .hebergements__container .bloc .stars {
     display: flex;
     flex-direction: row;
+    color: #0065FC;
 }
 
 .hebergements__container .bloc .stars .filled_star {
@@ -83,6 +94,22 @@ nav ul{
 header nav ul{
     display: flex;
     justify-content: right;
+}
+
+.populaires__container .bloc .picture {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 1px
+
+}
+
+.populaires__container .bloc .stars {
+    display: flex;
+    flex-direction: row;
+    color: #0065FC;
 }
 
 

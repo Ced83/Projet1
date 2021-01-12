@@ -1,0 +1,22 @@
+body {
+    background-color: gray;
+}
+
+
+.container{
+    width: 600px;
+    height:600px;
+    flex-direction: row;
+}
+
+.container .bloc{
+    background-color: white;
+    border: 1px solid black;
+
+    width: 150px;
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
