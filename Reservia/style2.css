@@ -10,71 +10,42 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-
-
-.header__conteneur{
-    
+.header_container{
     background-color: white;
     position: relative;
-    
+    display: flex;
+    width: 100%;
+}
+
+.header_container .navigateur{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigateur{
+    flex-direction: row;
 }
 
 #titre_principal{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     padding: 1px 8px;
-    
-}
-
-
-
-.navigateur ul{
-    padding-left: 0;
-    display: flex;
-
 }
 
 .navigateur li{
-    width: 50%;
-    text-align: center;
-    border-bottom: #F2F2F2 2px solid;
+    list-style-type: none;
 }
 
-
-.link{
-    font-size: 16px;
-    padding-bottom: 10px;
-    color: transparent;
-}
-
-.navigateur li:hover{
-    border-bottom-color: blue;
-}
-
-.navigateur li:hover a{
-    color:  #0065FC;
-}
-
-.link a{
+.link a {
     text-decoration: none;
-    color: black;
+    color: #0065FC;
 }
-
-
-
-
+.link-black a{
+    color: black;
+    text-decoration: none;
+}
 
 .blue{
     color: #0065FC;
-    list-style-type: none;
-    font-size: 16px;
     font-weight: bold;
-    text-decoration: none;
-    
-    
 }
 
 .search{
@@ -92,17 +63,14 @@ body {
     padding-left: 10px;
     width: 100%;
 }
-    
 
-.choice{
-
+.choice {
     display: flex;
     margin-block-start: -0.4em;
     font-weight: normal;
     font-size: 18px;
     width: 100%;
     padding-left: 12px;
-
 }
 
 .search-btn-container{
@@ -168,9 +136,7 @@ body {
     display: flex;
     background-color: white;
     width: 100%;
-    flex-direction: column;
-    margin-bottom: 13px;
-
+    flex-direction: row;
 }
 
 .title_filter{
@@ -184,18 +150,10 @@ body {
 
 .filters{
     display: flex;
-    width: 96%;
-    flex-direction: column;
-    padding-bottom: 11px;
+    width: 125%;
+    flex-direction: row;
     padding-left: 7px;
-} 
-
-.money-family{
-    display: flex;
-    width: 100%;
-    text-align: center;
-    padding-bottom: 13px;
-
+    justify-content: space-between;
 }
 
 .money-family i{
@@ -222,8 +180,9 @@ body {
     border-top-left-radius: 37px;
     border-bottom-left-radius: 30px;
     display: flex;
-    width: 56%;
-    margin-right: 7px;
+    width: 36%;
+    height: 64%;
+    background-color: white;
 }
 
 .icon-money p{
@@ -391,6 +350,17 @@ body {
     
 }
 
+.flat-famous-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.flat-famous-container, .populaires_container{
+    display: flex;
+    justify-content: flex-start;
+}
+
 
 
 
@@ -409,15 +379,15 @@ body {
 }
 
 .populaires_title h3{
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .populaires_container, .icon_line{
     display: flex;
     align-items: flex-start;
-    position: relative;
     padding-bottom: 26px;
-    width: 105%;
+    width: 38%;
+    border-radius: 27px;
     
 }
 
@@ -434,15 +404,13 @@ body {
 
 .item-container-famous{
     border: 1px solid transparent;
-    align-items: center;
-    list-style-type: none;
     display: flex;
-    width: 330px;
-    height: 126px;
-    margin: 10px;
+    width: 249px;
+    height: 119px;
+    margin: 4px;
     background-color: white;
     border-radius: 21px;
-    padding-left: 6px;
+    padding-left: 4px;
 }
 
 .item-container img {
@@ -459,8 +427,7 @@ body {
     border-bottom-left-radius: 17px;
 }
 
-.img-1 {
-    background-image: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+.img {
     margin-left: -2px;
     width: 43%;
     height: 72%;
@@ -468,52 +435,29 @@ body {
     padding-bottom: 28px
 }
 
-.img-2 {
-    background-image: url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
-    margin-left: -2px;
-    width: 43%;
-    height: 72%;
-    margin-top: 1px;
-    padding-bottom: 28px;
-}
-
-.img-3 {
-    background-image: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
-    margin-left: -2px;
-    width: 43%;
-    height: 72%;
-    margin-top: 1px;
-    padding-bottom: 28px;
-}
-
 .title-price-stars-item-container{
     background-color: white;
-    padding-right: 30px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    width: 73%;
-    margin-left: 9px;
-    height: 100%;
+    width: 65%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-bottom: 2px;
+    padding-left: 10px;
+    padding-top: 5px;
 }
 
 .title-price-stars-item-container h4{
     padding-left: 11px;
-    padding-top: 52px;
-    font-size: 17px;
-    width: 87%;
+    font-size: 13px;
+    width: 81%;
     font-weight: bold;
 }
 
 .title-price-stars-item-container p{
-    margin-top: -19px;
-    margin-left: 11px;
+   
     font-size: 13px;
+    margin-top: 5px;
 }
-
 
 .stars-famous{
     color: #0065FC;
@@ -530,100 +474,37 @@ body {
     color:  #F2F2F2;
 }
 
-
-
-
-
-
 .flat-container{
-    position: relative;
     display: flex;
-    background-color: white;
-    flex-direction: column;
-   
+    background-color: #F2F2F2;
+    width: 131%;
+    flex-flow: wrap;
+    border-radius: 27px;
+    justify-content: space-between;
+    margin-right: 13px;
 }
 
 
 .title-container-flat{
     font-size: 22px;
     padding-left: 17px;
-    background-color: white;
     font-weight: bold;
-    padding-bottom: -22px;
-    margin-bottom: 7px;
-    margin-top: 30px;
+    width: 100%;
 }
 
 .item-container{
 
     align-items: center;
     display: flex;
-    width: 330px;
-    margin: 10px;
     background-color: white;
     border-radius: 21px;
     padding-left: 6px;
     flex-direction: column;
     border-radius: 22px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
-
-
-
-
-.img-4 {
-    background-image: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
-    margin-left: -2px;
-    width: 43%;
-    height: 72%;
-    margin-top: 1px;
-    padding-bottom: 28px;
-}
-
-.img-5 {
-    background-image: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
-    margin-left: -2px;
-    width: 43%;
-    height: 72%;
-    margin-top: 1px;
-    padding-bottom: 28px;
-}
-
-.img-6 {
-    background-image: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
-    margin-left: -2px;
-    width: 43%;
-    height: 72%;
-    margin-top: 1px;
-    padding-bottom: 28px;
-}
-
-.img-7 {
-    background-image: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
-    margin-left: -2px;
-    width: 43%;
-    height: 72%;
-    margin-top: 1px;
-    padding-bottom: 28px;
-}
-
-.img-8 {
-    background-image: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
-    margin-left: -2px;
-    width: 43%;
-    height: 72%;
-    margin-top: 1px;
-    padding-bottom: 28px;
-}
-
-.img-9 {
-    background-image: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
-    margin-left: -2px;
-    width: 43%;
-    height: 72%;
-    margin-top: 1px;
-    padding-bottom: 28px;
+    margin-left: 12px;
+    width: 34%;
+    height: 23%;
 }
 
 .img-flat{
@@ -693,10 +574,7 @@ body {
     margin-top: 42px;
 }
 
-
 .item-container-activity{
-
-    
     align-items: center;
     display: flex;
     width: 330px;
@@ -728,58 +606,52 @@ body {
 
 }
 
+.img-4 {
+    background-image: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+}
+
+.img-5 {
+    background-image: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+}
+
+.img-6 {
+    background-image: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+}
+
+.img-7 {
+    background-image: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+}
+
+.img-8 {
+    background-image: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+}
+
+.img-9 {
+    background-image: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+}
+
 .img-10{
     background-image: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-    margin-left: -2px;
-    width: 43%;
-    height: 72%;
-    margin-top: 1px;
-    padding-bottom: 28px;
 }
 
 .img-11{
     background-image: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
-    margin-left: -2px;
-    width: 43%;
-    height: 72%;
-    margin-top: 1px;
-    padding-bottom: 28px;
 }
 
 .img-12{
     background-image: url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
-    margin-left: -2px;
-    width: 43%;
-    height: 72%;
-    margin-top: 1px;
-    padding-bottom: 28px;
 }
 
 .img-13{
     background-image: url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
-    margin-left: -2px;
-    width: 43%;
-    height: 72%;
-    margin-top: 1px;
-    padding-bottom: 28px;
 }
 
 .img-14{
     background-image: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
-    margin-left: -2px;
-    width: 43%;
-    height: 72%;
-    margin-top: 1px;
-    padding-bottom: 28px;
 }
 
 .img-15{
     background-image: url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
-    margin-left: -2px;
-    width: 43%;
-    height: 72%;
-    margin-top: 1px;
-    padding-bottom: 28px;
 }
 
 .item-container-activity h4{
@@ -791,15 +663,10 @@ body {
     padding-left: 18px;
 }
 
-
-
 #bloc_informations{
     background-color: #F2F2F2;
-    padding-bottom: 17px;
-    width: 108%;
-    margin-left: -8px;
-    
-    
+    width: 100%;
+    display: flex;
 }
 
 #bloc_informations li{
@@ -813,3 +680,4 @@ body {
     font-size: 19px;
     padding-left: 18px;
     padding-top: 37px;
+}
