@@ -165,7 +165,7 @@ body {
     border-radius: 25px;
     position: relative;
     padding: 0 10px 0 55px;
-    border: 2px solid silver;
+    border: 1px solid silver;
     margin-right: 10px;
     margin-bottom: 10px;
 }
@@ -196,7 +196,7 @@ body {
 }
 
 .search__container .information p {
-    font-size: 14px;
+    font-size: 16px;
     margin-left: 10px;
 }
 
@@ -234,10 +234,14 @@ body {
 }
 
 .populaires_container .item-container-famous .img-hebergement {
-    min-width: 50%;
+    width: 37%;
     height: 100%;
     background-size: cover;
     background-position: center;
+}
+.flat-populaires-container ;.flat-container strong{
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .populaires_container .item-container-famous .img-1 {
@@ -255,9 +259,9 @@ body {
 .populaires_container .item-container-famous .title-price-stars-item-container {
     height: 100%;
     padding-left: 15px;
-
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 
 .populaires_container .item-container-famous .title-price-stars-item-container h4 {
@@ -286,7 +290,7 @@ body {
 
 /** Hebergements **/
 
-.flat-poulaires-container h2{
+.flat-populaires-container h2{
     font-size: 19px;
     padding-left: 20px;
 }
@@ -294,10 +298,13 @@ body {
 .flat-container {
     padding: 0 20px 20px 20px;
 }
+.flat-container .empty_star{
+    color:#F2F2F2;
+}
+
 
 .flat-container .title-container-flat {
     font-size: 22px;
-    background-color: white;
     font-weight: bold;
     margin-top: 30px;
 }
@@ -349,7 +356,7 @@ body {
     margin: 0px;
     padding-top: 10px;
     margin-bottom: -12px;
-    font-size: 18px;
+    font-size: 16px;
 
 }
 
@@ -365,7 +372,7 @@ body {
 }
 
 .show-more{
-    padding-left: 25px;
+    
     padding-top: 20px;
     font-weight: bold;
     font-size: 18px;
@@ -377,30 +384,30 @@ body {
     background-color: white;
     flex-direction: column;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 18px;
 }
 
 .title-principal-activity {
     font-size: 21px;
-    margin-bottom: 20px;
-    margin-top: 42px;
+    margin-top: 40px;
     width: 90%;
-    margin-left: 5%;
+    margin-left: 6%;
 }
 
 .item-container-activity {
-    border: 6px solid white;
+    border: 1px solid white;
     align-items: center;
     list-style-type: none;
     display: flex;
     flex-direction: column;
     height: 160px;
-    width: 100%;
+    width: 97%;
     overflow: hidden;
     background-color: white;
     border-radius: 21px;
     margin-bottom: 10px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-right: 5px;
 }
 
 .img-activity {
@@ -467,16 +474,18 @@ body {
 
 #bloc_informations li{
     list-style-type: none;
-    margin: 12px;
-    margin-left: -23px;
+    margin: 10px;
     padding-bottom: 6px;
 }
 
 #bloc_informations h4{
     font-size: 19px;
-    padding-left: 18px;
-    padding-top: 37px;
+    width: 100%;
+    padding-left: 50px;
+    padding-top: 30px;
   }
+
+
 
 @media all and (min-width:992px){
     .header__container{
@@ -537,12 +546,18 @@ body {
 @media all and (min-width:992px){
     .search__container .search-btn-container {
         height:45px;
-        width: 35%;
+        width: 40%;
     }
     .search__container .search-btn-container .search-btn-icon-right-container{
         width: 30%;
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;
+    }
+    .fa-search:before {
+        content: "Rechercher";
+        font-size: 16px;
+        
+
     }
 
     .search__container .search-btn-container .search-btn-icon-left-container{
@@ -574,12 +589,78 @@ body {
 
     .filter_container .filters{
         height: 50px;
-        
+        width: 80%;
         display: flex;
         flex-direction: row;
     }
+    .search__container .filter_container .filters .filter_icon{
+        height: 35px;
+    }
+    .search__container .filter_container .filters .filter_icon i{
+        left: -3px;
+        z-index: 10;
+        border-radius: 50px;
+        position: absolute;
+        font-size: 15px;
+        color: #0065FC;
+        background-color: #DEEBFF;
+        height: 40px;
+        width: 45px;
+        display: flex;
+        top: -3px;
+        align-items: center;
+        justify-content: center;
+    }
+    .search__container .information p {
+        font-size: 15px;
+        margin-left: 10px;
+    }
      
-}    
+    } 
+    
+@media all and (min-width:992px){
+    .flat-populaires-container{
+        width: 100%;
+        height: 520px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .populaires_container{
+        width: 30%;
+        margin-left: 10px;
+        border-radius: 20px;
+    }
+
+    .flat-container .title-container-flat{
+        width: 100%;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 1px;
+    }
+
+    .flat-container{
+        display: flex;
+    background-color: #F2F2F2;
+    width: 64%;
+    flex-flow: wrap;
+    justify-content: space-between;
+    border-radius: 20px;
+    }
+    .flat-container .item__container{
+        width: 30%;
+        height: 30%;
+    }
+    .populaires_container .item-container-famous .img-hebergement{
+        min-width: 35%;
+    }
+    
+    .item__container{
+        width: 95%;
+    }
+
+}
 
 @media all and (min-width:650px){
     .img-activity {
@@ -588,8 +669,18 @@ body {
   }
 
 @media all and (min-width:992px){
-    .Activity_container {
+    .title-principal-activity {
+        font-size: 21px;
+        margin-top: 40px;
+        width: 90%;
+        margin-left: 2%;
+
+    }
+
+    .Activity_container{
+        display: flex;
         flex-direction: row;
+        width: 98%;
     }
 
     .Activity_container .img-activities {
@@ -600,19 +691,24 @@ body {
     .Activity_container .item-container-activity {
         height: 100%;
         border: 0;
+        width: 100%;
+        
     }
 
     .Activity_container .img-activities .item-container-activity {
-        margin: 20px 0;
+        width: 100%;
+        height: 200px;
     }
 
     .Activity_container .item-container-activity .img-activity {
-        height: 385px;
+        height: 345px;
         width: 100%;
     }
 
     .Activity_container .img-activities, .Activity_container .item-container-activity {
-        margin: 20px;
+        width: 100%;
+        height: 370px;
+       
     }
 
     .Activity_container .img-activities .item-container-activity:nth-of-type(1) .img-activity {
@@ -630,4 +726,20 @@ body {
         height: 80px;
     }
 } */
+@media all and (min-width:992px){
+    #bloc_informations{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    }
+
+    .about{
+        width: 35%;
+    }
+
+    .our-flat{
+        width: 30%;
+    }
+}
 
